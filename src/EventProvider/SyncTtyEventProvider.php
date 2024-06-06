@@ -31,7 +31,7 @@ final class SyncTtyEventProvider implements EventProvider
         while ($event = array_shift($this->buffer)) {
             return $event;
         }
-        while (null !== $line = $this->reader->read()) {
+        if (null !== $line = $this->reader->read()) {
             // TODO: pass true here if we read as much as we could as there
             // _could_ still be more in this case.
             $this->parser->advance($line, more: false);

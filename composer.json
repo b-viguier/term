@@ -25,7 +25,8 @@
         "friendsofphp/php-cs-fixer": "^3.34",
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.4",
-        "symfony/var-dumper": "^6.3"
+        "symfony/var-dumper": "^6.3",
+        "revolt/event-loop": "^1.0"
     },
     "scripts": {
         "phpstan": "./vendor/bin/phpstan --memory-limit=1G",
